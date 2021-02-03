@@ -57,6 +57,7 @@ const verifyAuth = async (ctx, next) => {
 const verifyPermission=async (ctx,next)=>{
   console.log('验证权限的middleware')
   //1. 获取参数
+  const [resourceKey]=Object.keys(ctx.params)
   const {momentId} =ctx.params
   const {id}=ctx.user
   //2.查询是否具备权限

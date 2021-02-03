@@ -6,7 +6,8 @@ const {
   create,
   detail,
   list,
-  update
+  update,
+  remove
 }=require('../controller/moment.controller')
 
 const {
